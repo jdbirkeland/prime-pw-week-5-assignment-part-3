@@ -36,3 +36,17 @@ console.log(collection[4]);
 addToCollection('...is a Real Boy', 'Say Anything', '2003')
 console.log(collection[5]);
 console.log(collection);
+
+function showCollection(album){
+      for (let i=0; i<album.length; i++){
+        console.log(album[i]);
+      }
+        console.log(album.length);
+        console.log(collection[0].title, 'by', collection[0].artist,', published in ', collection[0].yearPublished);
+        console.log(collection[1].title, 'by', collection[1].artist,', published in ', collection[1].yearPublished);
+        console.log(collection[2].title, 'by', collection[2].artist,', published in ', collection[2].yearPublished);
+        console.log(collection[3].title, 'by', collection[3].artist,', published in ', collection[3].yearPublished);
+        console.log(collection[4].title, 'by', collection[4].artist,', published in ', collection[4].yearPublished);
+        console.log(collection[5].title, 'by', collection[5].artist,', published in ', collection[5].yearPublished);
+}
+showCollection(collection);
