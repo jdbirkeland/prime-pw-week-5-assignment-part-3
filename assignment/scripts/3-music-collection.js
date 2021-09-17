@@ -24,8 +24,15 @@ console.log('in addToCollection', title,artist,yearPublished);
 }
 
 addToCollection('Let It Be','The Replacements','1985');
+console.log(collection[0]);
+addToCollection('Designing a Nervous Breakdown','The Anniversary','2000');
+console.log(collection[1]);
+addToCollection('Reconstruction Site', 'The Weakerthans', '2003')
+console.log(collection[2]);
+addToCollection('Born to Die','Lana Del Rey', '2012')
+console.log(collection[3]);
+addToCollection('Blone','Frank Ocean','2016')
+console.log(collection[4]);
+addToCollection('...is a Real Boy', 'Say Anything', '2003')
+console.log(collection[5]);
 console.log(collection);
-addToCollection('How to Design a Nervous Breakdown','The Anniversary','2003');
-console.log(collection);
-
-// Super frustrated but happier now - Worked 3 hours on this and it was just a Stupid synax error in my first line - Lesson Learned.
