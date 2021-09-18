@@ -31,7 +31,7 @@ addToCollection('Reconstruction Site', 'The Weakerthans', '2003')
 console.log(collection[2]);
 addToCollection('Deltron 3030','Deltron 3030', '2000')
 console.log(collection[3]);
-addToCollection('Blone','Frank Ocean','2016')
+addToCollection('Blonde','Frank Ocean','2016')
 console.log(collection[4]);
 addToCollection('...is a Real Boy', 'Say Anything', '2004')
 console.log(collection[5]);
@@ -52,14 +52,21 @@ function showCollection(album){
         }
         console.log(album.length);
       }
-        showCollection(collection);
+showCollection(collection);
 
-        function showByArtist(){
-          for (let i=0; i<collection.length; i++)
-          console.log(collection[i]);
-            if (collection[i] === collection[3].artist){
-              console.log('Found my Artist!');
-            }
-        }
+let artistFound = [];
+console.log(artistFound);
 
-        showByArtist('Deltron 3030');
+function findByArtist(artist){
+  for (let i=0; i<collection.length; i++){
+    if (collection[i].artist === artist){
+      console.log('Found my Artist!',collection[i].artist);
+      return artistFound.push(collection[i].artist)
+    }
+  }
+}
+
+
+findByArtist('Deltron 3030'); // function logged 'Found my Artist! Deltron 3030' and added to artistFound array
+findByArtist('Taylor Swift'); // function returned blank
+findByArtist('Say Anything');
